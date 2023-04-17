@@ -1,0 +1,12 @@
+syntax = "proto3";
+package achala.achala;
+
+import "gogoproto/gogo.proto";
+import "achala/achala/params.proto";
+
+option go_package = "achala/x/achala/types";
+
+// GenesisState defines the achala module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+}

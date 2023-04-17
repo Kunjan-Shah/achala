@@ -1,0 +1,7 @@
+syntax = "proto3";
+package achala.achala;
+
+option go_package = "achala/x/achala/types";
+
+// Msg defines the Msg service.
+service Msg {}
